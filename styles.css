@@ -2366,13 +2366,17 @@ body.light-mode .theme-toggle-btn:hover {
     --container-width: 900px;
   }
   
+  .navbar nav {
+    margin-right: 0;
+  }
+  
   .navbar .nav-links {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 80px;
     left: 0;
-    width: 100%;
+    right: 0;
     background: rgba(8, 9, 13, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -2428,6 +2432,10 @@ body.light-mode .theme-toggle-btn:hover {
     --container-width: 680px;
   }
   
+  .navbar .container {
+    padding: 0 16px;
+  }
+  
   .logo {
     font-size: 1.25rem;
   }
@@ -2438,6 +2446,10 @@ body.light-mode .theme-toggle-btn:hover {
   
   .navbar .nav-actions .btn-cyber {
     display: none;
+  }
+  
+  .nav-actions {
+    gap: 12px;
   }
   
   .nav-mobile-btn {
