@@ -794,6 +794,10 @@ a {
   text-shadow: 0 0 8px rgba(0, 255, 210, 0.3);
 }
 
+.nav-mobile-btn {
+  display: none;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -897,6 +901,7 @@ body.light-mode .theme-toggle-btn:hover {
   padding-top: 150px;
   padding-bottom: 80px;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-grid {
@@ -1466,6 +1471,7 @@ body.light-mode .theme-toggle-btn:hover {
 .quick-amounts {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .btn-amount {
@@ -2422,6 +2428,33 @@ body.light-mode .theme-toggle-btn:hover {
     --container-width: 680px;
   }
   
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .logo-clover {
+    font-size: 1.5rem;
+  }
+  
+  .navbar .nav-actions .btn-cyber {
+    display: none;
+  }
+  
+  .nav-mobile-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .nav-mobile-btn .btn-cyber {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    box-shadow: var(--glow-cyan);
+  }
+  
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2478,6 +2511,19 @@ body.light-mode .theme-toggle-btn:hover {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2485,17 +2531,45 @@ body.light-mode .theme-toggle-btn:hover {
     --container-width: 100%;
   }
   
+  .navbar .container {
+    padding: 0 16px;
+  }
+  
+  .logo {
+    font-size: 1.15rem;
+  }
+  
+  .logo-clover {
+    font-size: 1.3rem;
+  }
+  
   .hero-content h1 {
     font-size: 2.5rem;
   }
   
+  .countdown-timer {
+    gap: 8px;
+  }
+  
   .timer-segment {
-    min-width: 60px;
-    padding: 8px 10px;
+    min-width: 55px;
+    padding: 8px 6px;
   }
   
   .timer-num {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .hero-actions .btn-cyber,
+  .hero-actions .btn-cyber-secondary {
+    width: 100%;
+    text-align: center;
   }
   
   .hero-car-wrapper {
