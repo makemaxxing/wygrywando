@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WYGRYWANDO | Oficjalne Loterie, Karta Farciarza i Sklep</title>
+  
+  <!-- SEO & Meta Tags -->
+  <meta name="description" content="Dołącz do społeczności Wygrywando! Kup Kartę Farciarza lub oficjalny merch i wygrywaj niesamowite nagrody, w tym samochody marzeń. Zobacz ekskluzywne treści w Klubie VOD.">
+  <meta name="keywords" content="wygrywando, loteria promocyjna, karta farciarza, porsche, konkursy z nagrodami, klub wygrywando, sklep wygrywando">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="WYGRYWANDO | Oficjalne Loterie i Sklep">
+  <meta property="og:description" content="Kup Kartę Farciarza, zgarniaj losy i wygrywaj samochody marzeń!">
+  <meta property="og:image" content="assets/hero_car.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-clover logo-clover"></i>
+        <span>WYGRYWANDO</span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#giveaway">Nagrody</a></li>
+          <li><a href="#vod">Klub</a></li>
+          <li><a href="#winners">Zwycięzcy</a></li>
+          <li><a href="#store">Sklep</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="cart-icon-btn" id="cartBtn" aria-label="Koszyk zakupowy">
+          <i class="fa-solid fa-shopping-bag"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+        <a href="#tiers" class="btn-cyber" style="padding: 10px 20px; font-size: 0.8rem;">Kup Kartę</a>
+        <button class="hamburger" id="menuToggle" aria-label="Otwórz menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="badge-neon">Aktywna Akcja Promocyjna</span>
+          <h1>Rozdajemy emocje. Wyrywaj marzenia.</h1>
+          <p class="subtitle">Wygrywando to coś więcej niż loteria. To społeczność, która zamienia marzenia w rzeczywistość. Zdobądź swoją Kartę Farciarza i zgarnij klucze do legendarnego Porsche 911 GT3 RS!</p>
+          
+          <!-- Timer Countdown Box -->
+          <div class="countdown-box">
+            <span class="countdown-label">Koniec losowania za:</span>
+            <div class="countdown-timer" id="timer" aria-live="polite">
+              <div class="timer-segment">
+                <div class="timer-num" id="days">04</div>
+                <div class="timer-label">Dni</div>
+              </div>
+              <div class="timer-segment">
+                <div class="timer-num" id="hours">12</div>
+                <div class="timer-label">Godz</div>
+              </div>
+              <div class="timer-segment">
+                <div class="timer-num" id="minutes">45</div>
+                <div class="timer-label">Min</div>
+              </div>
+              <div class="timer-segment">
+                <div class="timer-num" id="seconds">18</div>
+                <div class="timer-label">Sek</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="#tiers" class="btn-cyber">Wybierz Kartę</a>
+            <a href="#giveaway" class="btn-cyber-secondary">Zobacz Nagrodę</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="glowing-circle"></div>
+          <div class="hero-car-wrapper" id="card3DWrapper">
+            <div class="hero-car-card" id="card3D">
+              <img src="assets/hero_car.png" alt="Porsche 911 GT3 RS" class="hero-car-img">
+              <div class="car-floating-badge">
+                <h4>Porsche 911 GT3 RS</h4>
+                <p>Wygraj to auto + 20,000 PLN gotówki</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACTIVE GIVEAWAY SHOWCASE
+         ========================================================================== -->
+    <section class="giveaway-section section-padding" id="giveaway">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Nagroda Główna Edycji</h2>
+          <p>Oto co czeka na Ciebie w tej edycji. Samochód marzeń gotowy do odbioru, ubezpieczony i zatankowany do pełna.</p>
+        </div>
+        
+        <div class="glass-card giveaway-card reveal-on-scroll">
+          <div class="giveaway-visual-wrapper">
+            <span class="badge-neon-purple giveaway-overlay-badge">Model 2026</span>
+            <img src="assets/hero_car.png" alt="Porsche 911 GT3 RS Neon Edition" class="giveaway-img">
+          </div>
+          
+          <div class="giveaway-info">
+            <div class="giveaway-title">
+              <span class="badge-neon">Supercar</span>
+              <h3>Porsche 911 GT3 RS</h3>
+              <div class="giveaway-cash-bonus">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>+ 20,000 PLN w gotówce w schowku!</span>
+              </div>
+            </div>
+            
+            <p>Zbudowany z myślą o torze wyścigowym, dostosowany do dróg publicznych. Wersja z unikalnym malowaniem Wygrywando Cyber-Neon, karbonowym pakietem aerodynamicznym i sportowym wydechem.</p>
+            
+            <div class="giveaway-specs">
+              <div class="spec-item">
+                <span class="spec-name">Silnik</span>
+                <span class="spec-val">4.0L Boxer N/A</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Moc</span>
+                <span class="spec-val">525 KM / 470 Nm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">0 - 100 km/h</span>
+                <span class="spec-val">3.2 sekundy</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-name">Prędkość max</span>
+                <span class="spec-val">296 km/h</span>
+              </div>
+            </div>
+            
+            <!-- Giveaway Progress -->
+            <div class="giveaway-progress-container">
+              <div class="progress-label-row">
+                <span>Dystrybucja losów promocyjnych:</span>
+                <span class="progress-pct">78%</span>
+              </div>
+              <div class="progress-track" aria-label="Stan dystrybucji losów: 78%">
+                <div class="progress-bar"></div>
+              </div>
+            </div>
+            
+            <a href="#tiers" class="btn-cyber" style="align-self: flex-start;">Biorę Udział</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         KARTA FARCIARZA TIERS SECTION
+         ========================================================================== -->
+    <section class="tiers-section section-padding" id="tiers">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Wybierz Swoją Kartę Farciarza</h2>
+          <p>Karta Farciarza to elektroniczny bon zniżkowy do sklepu Wygrywando. Każdy zakup wspiera rozwój kanału i zapewnia darmowe losy w akcji promocyjnej oraz dostęp do Klubu VOD.</p>
+        </div>
+        
+        <div class="tiers-grid">
+          <!-- Bronze Tier -->
+          <div class="glass-card tier-card tier-bronze reveal-on-scroll reveal-stagger-1">
+
+            <i class="fa-solid fa-clover" style="font-size: 2.5rem; color: #b87333;"></i>
+            <h3 class="tier-name">Brązowa</h3>
+            
+            <div class="tier-price">
+              <span class="price-num">29</span>
+              <span class="price-currency">zł</span>
+            </div>
+            
+            <div class="tier-tickets">1 Los w Loterii</div>
+            
+            <ul class="tier-features">
+              <li><i class="fa-solid fa-check"></i> Bon 29 zł do sklepu</li>
+              <li><i class="fa-solid fa-check"></i> 180 dni dostępu VOD</li>
+              <li><i class="fa-solid fa-check"></i> Dostęp do wideo Basic</li>
+              <li style="opacity: 0.4; text-decoration: line-through;"><i class="fa-solid fa-xmark"></i> Stały rabat w sklepie</li>
+              <li style="opacity: 0.4; text-decoration: line-through;"><i class="fa-solid fa-xmark"></i> Członkostwo VIP Discord</li>
+            </ul>
+            
+            <button class="btn-cyber-secondary addToCartBtn" data-id="card-bronze" data-name="Karta Farciarza - Brązowa" data-price="29" data-tickets="1">Wybierz</button>
+          </div>
+          
+          <!-- Silver Tier -->
+          <div class="glass-card tier-card tier-silver reveal-on-scroll reveal-stagger-2">
+
+            <i class="fa-solid fa-clover" style="font-size: 2.5rem; color: #c0c0c0;"></i>
+            <h3 class="tier-name">Srebrna</h3>
+            
+            <div class="tier-price">
+              <span class="price-num">49</span>
+              <span class="price-currency">zł</span>
+            </div>
+            
+            <div class="tier-tickets">3 Losy w Loterii</div>
+            
+            <ul class="tier-features">
+              <li><i class="fa-solid fa-check"></i> Bon 49 zł do sklepu</li>
+              <li><i class="fa-solid fa-check"></i> 180 dni dostępu VOD</li>
+              <li><i class="fa-solid fa-check"></i> Dostęp do wideo Premium</li>
+              <li><i class="fa-solid fa-check"></i> 5% stałego rabatu w sklepie</li>
+              <li style="opacity: 0.4; text-decoration: line-through;"><i class="fa-solid fa-xmark"></i> Członkostwo VIP Discord</li>
+            </ul>
+            
+            <button class="btn-cyber-secondary addToCartBtn" data-id="card-silver" data-name="Karta Farciarza - Srebrna" data-price="49" data-tickets="3">Wybierz</button>
+          </div>
+          
+          <!-- Gold Tier -->
+          <div class="glass-card tier-card tier-gold reveal-on-scroll reveal-stagger-3">
+
+            <i class="fa-solid fa-clover" style="font-size: 2.5rem; color: #ffd700; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);"></i>
+            <h3 class="tier-name">Złota</h3>
+            
+            <div class="tier-price">
+              <span class="price-num">79</span>
+              <span class="price-currency">zł</span>
+            </div>
+            
+            <div class="tier-tickets">6 Losów w Loterii</div>
+            
+            <ul class="tier-features">
+              <li><i class="fa-solid fa-check"></i> Bon 79 zł do sklepu</li>
+              <li><i class="fa-solid fa-check"></i> 180 dni dostępu VOD</li>
+              <li><i class="fa-solid fa-check"></i> Cała biblioteka wideo VOD</li>
+              <li><i class="fa-solid fa-check"></i> 10% stałego rabatu w sklepie</li>
+              <li><i class="fa-solid fa-check"></i> Dedykowana rola VIP Discord</li>
+            </ul>
+            
+            <button class="btn-cyber addToCartBtn" data-id="card-gold" data-name="Karta Farciarza - Złota" data-price="79" data-tickets="6">Wybierz</button>
+          </div>
+          
+          <!-- Legend Tier -->
+          <div class="glass-card tier-card tier-legend reveal-on-scroll reveal-stagger-4">
+
+            <i class="fa-solid fa-clover logo-clover" style="font-size: 2.5rem;"></i>
+            <h3 class="tier-name" style="background: var(--gradient-cyber); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Legenda</h3>
+            
+            <div class="tier-price">
+              <span class="price-num" style="background: var(--gradient-cyber); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">129</span>
+              <span class="price-currency">zł</span>
+            </div>
+            
+            <div class="tier-tickets">12 Losów w Loterii</div>
+            
+            <ul class="tier-features">
+              <li><i class="fa-solid fa-check"></i> Bon 129 zł do sklepu</li>
+              <li><i class="fa-solid fa-check"></i> 180 dni dostępu VIP VOD</li>
+              <li><i class="fa-solid fa-check"></i> Niepublikowane sceny i VOD</li>
+              <li><i class="fa-solid fa-check"></i> 15% stałego rabatu w sklepie</li>
+              <li><i class="fa-solid fa-check"></i> Rola Elite Discord + Chat z Kasia & Michal</li>
+            </ul>
+            
+            <button class="btn-cyber addToCartBtn" data-id="card-legend" data-name="Karta Farciarza - Legendarna" data-price="129" data-tickets="12">Wybierz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE TICKET CALCULATOR
+         ========================================================================== -->
+    <section class="calculator-section section-padding" id="calculator">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Kalkulator Szczęścia</h2>
+          <p>Dostosuj wartość wsparcia i natychmiast zobacz, ile losów trafi na Twoje konto, jaki rabat otrzymasz w sklepie oraz jaki osiągniesz poziom szczęścia.</p>
+        </div>
+        
+        <div class="glass-card calculator-card reveal-on-scroll">
+          <div class="calculator-grid">
+            <div class="calc-left">
+              <div class="calc-slider-group">
+                <div class="slider-labels">
+                  <span>Wsparcie projektu:</span>
+                  <span class="amount-display"><span id="calcAmount">100</span> PLN</span>
+                </div>
+                <input type="range" min="10" max="500" value="100" class="cyber-slider" id="calcSlider" aria-valuemin="10" aria-valuemax="500" aria-valuenow="100">
+              </div>
+              
+              <div class="quick-amounts">
+                <button class="btn-amount" data-val="30">30 PLN</button>
+                <button class="btn-amount" data-val="50">50 PLN</button>
+                <button class="btn-amount active" data-val="100">100 PLN</button>
+                <button class="btn-amount" data-val="200">200 PLN</button>
+                <button class="btn-amount" data-val="500">500 PLN</button>
+              </div>
+            </div>
+            
+            <div class="calc-right">
+              <div class="output-row">
+                <span class="output-label">Otrzymujesz łącznie:</span>
+                <span class="output-val-tickets" id="calcTickets">8</span>
+                <span class="output-label" style="margin-top: -6px;">Losów w loterii</span>
+              </div>
+              
+              <div class="output-row" style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 16px;">
+                <span class="output-label">Bon zniżkowy do sklepu:</span>
+                <span class="output-val-bonus" id="calcVoucher">100 PLN</span>
+              </div>
+              
+              <div class="lucky-meter-group">
+                <span class="output-label">Twój Poziom Szczęścia:</span>
+                <span class="meter-label-val" id="luckyLevelText">Poszukiwacz</span>
+                <div class="meter-track" aria-label="Wskaźnik poziomu szczęścia">
+                  <div class="meter-fill" id="luckyMeterFill" style="width: 20%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MERCH STORE SECTION
+         ========================================================================== -->
+    <section class="store-section section-padding" id="store">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Boutique Wygrywando</h2>
+          <p>Kupuj oficjalną, limitowaną odzież uliczną najwyższej jakości. Każdy produkt fizyczny zawiera określoną pulę losów promocyjnych przypisywanych do Twojego profilu.</p>
+        </div>
+        
+        <div class="merch-grid">
+          <!-- Hoodie Classy Clover -->
+          <div class="glass-card merch-card reveal-on-scroll reveal-stagger-1">
+            <div class="merch-img-container">
+              <span class="badge-neon-purple merch-ticket-overlay">+ 20 Losów</span>
+              <img src="assets/merch_hoodie.png" alt="Czarna Bluza Wygrywando z cyanowym koniczynem" class="merch-img">
+            </div>
+            
+            <div class="merch-details">
+              <div class="merch-meta">
+                <div>
+                  <h3>Bluza Klasyk Clover</h3>
+                  <div class="merch-size-select">
+                    <span class="size-label">Rozmiar:</span>
+                    <div class="size-options">
+                      <button class="btn-size" aria-label="Rozmiar S">S</button>
+                      <button class="btn-size active" aria-label="Rozmiar M">M</button>
+                      <button class="btn-size" aria-label="Rozmiar L">L</button>
+                      <button class="btn-size" aria-label="Rozmiar XL">XL</button>
+                    </div>
+                  </div>
+                </div>
+                <span class="merch-price">199.00 zł</span>
+              </div>
+              <p style="font-size: 0.85rem; margin-bottom: 8px;">Heavyweight 400 GSM, 100% bawełna czesana, krój boxy, haftowane logo ze świecącym nicią cyan.</p>
+              <button class="btn-cyber addToCartBtn" data-id="merch-hoodie" data-name="Bluza Klasyk Clover" data-price="199" data-tickets="20">Dodaj do koszyka</button>
+            </div>
+          </div>
+          
+          <!-- T-Shirt Cyber Clover -->
+          <div class="glass-card merch-card reveal-on-scroll reveal-stagger-2">
+            <div class="merch-img-container">
+              <span class="badge-neon-purple merch-ticket-overlay">+ 10 Losów</span>
+              <!-- Reuse same hoodie as base but with different label for showcase mockup in static file -->
+              <img src="assets/merch_hoodie.png" alt="Koszulka Czarna Cyber Clover" class="merch-img" style="filter: brightness(1.2); max-height: 80%;">
+            </div>
+            
+            <div class="merch-details">
+              <div class="merch-meta">
+                <div>
+                  <h3>T-Shirt Cyber Clover</h3>
+                  <div class="merch-size-select">
+                    <span class="size-label">Rozmiar:</span>
+                    <div class="size-options">
+                      <button class="btn-size" aria-label="Rozmiar S">S</button>
+                      <button class="btn-size active" aria-label="Rozmiar M">M</button>
+                      <button class="btn-size" aria-label="Rozmiar L">L</button>
+                      <button class="btn-size" aria-label="Rozmiar XL">XL</button>
+                    </div>
+                  </div>
+                </div>
+                <span class="merch-price">99.00 zł</span>
+              </div>
+              <p style="font-size: 0.85rem; margin-bottom: 8px;">240 GSM, bawełna premium, sitodruk najwyższej trwałości, krój oversize z minimalistycznym logiem.</p>
+              <button class="btn-cyber addToCartBtn" data-id="merch-tshirt" data-name="T-Shirt Cyber Clover" data-price="99" data-tickets="10">Dodaj do koszyka</button>
+            </div>
+          </div>
+          
+          <!-- Cap Snapback Legend -->
+          <div class="glass-card merch-card reveal-on-scroll reveal-stagger-3">
+            <div class="merch-img-container">
+              <span class="badge-neon-purple merch-ticket-overlay">+ 5 Losów</span>
+              <img src="assets/lucky_card.png" alt="Czapka Snapback Wygrywando" class="merch-img" style="transform: rotate(-15deg); scale: 0.8;">
+            </div>
+            
+            <div class="merch-details">
+              <div class="merch-meta">
+                <div>
+                  <h3>Czapka Snapback Legend</h3>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; margin-top: 4px;">ROZMIAR: UNIWERSALNY</div>
+                </div>
+                <span class="merch-price">79.00 zł</span>
+              </div>
+              <p style="font-size: 0.85rem; margin-bottom: 8px;">Regulowana czapka typu snapback, haft 3D logo clover na froncie, cyberpunkowy neonowy spód daszka.</p>
+              <button class="btn-cyber addToCartBtn" data-id="merch-cap" data-name="Czapka Snapback Legend" data-price="79" data-tickets="5">Dodaj do koszyka</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VOD & KLUB WYGRYWANDO
+         ========================================================================== -->
+    <section class="vod-section section-padding" id="vod">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Klub VOD Wygrywando</h2>
+          <p>Wejdź za kulisy i zobacz niepublikowane materiały. Testy samochodów, relacje z budowy nagród, vlogi oraz podcasty dostępne wyłącznie dla wspierających.</p>
+        </div>
+        
+        <div class="vod-grid">
+          <div class="vod-promo reveal-on-scroll">
+            <span class="badge-neon">Tylko dla Członków</span>
+            <h3>Ekskluzywne Treści Video</h3>
+            <p>Kupując dowolną Kartę Farciarza, otrzymujesz bezpośredni dostęp do platformy VOD. To tam Michał i Kasia pokazują prawdziwe emocje bez cenzury.</p>
+            
+            <ul class="vod-features">
+              <li>
+                <i class="fa-solid fa-film"></i>
+                <div>
+                  <h4>Materiały "Od Kuchni"</h4>
+                  <p>Zobacz, jak planujemy, kupujemy i przygotowujemy nagrody do losowania.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                  <h4>Ekstremalne Testy Aut</h4>
+                  <p>Przejazdy testowe na torach wyścigowych oraz opinie profesjonalistów.</p>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-microphone"></i>
+                <div>
+                  <h4>Podcast Wygrywando</h4>
+                  <p>Szczere rozmowy z gośćmi, kulisy pracy w internecie i plany na przyszłość.</p>
+                </div>
+              </li>
+            </ul>
+            
+            <a href="#tiers" class="btn-cyber" style="margin-top: 10px;">Uzyskaj Dostęp</a>
+          </div>
+          
+          <div class="vod-dashboard-preview reveal-on-scroll">
+            <!-- Video 1 -->
+            <div class="vod-thumb" data-video="porsche-test" data-title="Porsche 911 GT3 RS - Test na Torze Poznań">
+              <img src="assets/hero_car.png" alt="Miniatura wideo: Porsche 911 GT3 RS" class="vod-img">
+              <div class="vod-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="vod-play-overlay">
+                <span class="vod-duration">18:45</span>
+                <h4 class="vod-thumb-title">Porsche 911 GT3 RS - Test na Torze</h4>
+              </div>
+            </div>
+            
+            <!-- Video 2 -->
+            <div class="vod-thumb" data-video="behind-scenes" data-title="Jak kupowaliśmy Porsche? Zakup z Niemiec - Od Kuchni">
+              <img src="assets/hero_car.png" alt="Miniatura wideo: Zakup auta" class="vod-img" style="filter: hue-rotate(90deg) brightness(0.8);">
+              <div class="vod-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="vod-play-overlay">
+                <span class="vod-duration">24:12</span>
+                <h4 class="vod-thumb-title">Zakup Auta od Kulic - Za Kulisami</h4>
+              </div>
+            </div>
+            
+            <!-- Video 3 -->
+            <div class="vod-thumb" data-video="qa-kasia-michal" data-title="Prywatne Q&A: Kasia i Michał odpowiadają na trudne pytania">
+              <img src="assets/lucky_card.png" alt="Miniatura wideo: Q&A z twórcami" class="vod-img" style="object-fit: cover;">
+              <div class="vod-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="vod-play-overlay">
+                <span class="vod-duration">32:05</span>
+                <h4 class="vod-thumb-title">Szczere Q&A - Odpowiadamy Fankom</h4>
+              </div>
+            </div>
+            
+            <!-- Video 4 -->
+            <div class="vod-thumb" data-video="delivery-reaction" data-title="Reakcja Tomka na wygraną Cadillac Escalade! Łzy szczęścia!">
+              <img src="assets/hero_car.png" alt="Miniatura wideo: Wręczenie nagrody" class="vod-img" style="filter: hue-rotate(220deg) brightness(0.7);">
+              <div class="vod-play-btn" aria-hidden="true">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div class="vod-play-overlay">
+                <span class="vod-duration">15:30</span>
+                <h4 class="vod-thumb-title">Wręczenie Auta: Reakcja Zwycięzcy</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WINNERS TIMELINE GALLERY
+         ========================================================================== -->
+    <section class="winners-section section-padding" id="winners">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>Galeria Prawdziwych Zwycięzców</h2>
+          <p>Oni zaryzykowali, wsparli nasz kanał i odebrali kluczyki. Zobacz naszą historię oraz ich niesamowite emocje.</p>
+        </div>
+        
+        <div class="winners-grid">
+          <!-- Winner 1 -->
+          <div class="glass-card winner-card reveal-on-scroll reveal-stagger-1">
+            <div class="winner-avatar-row">
+              <div class="winner-avatar" aria-hidden="true">
+                <i class="fa-solid fa-user-astronaut"></i>
+              </div>
+              <div class="winner-meta">
+                <h4>Tomek z Gdańska</h4>
+                <span class="winner-date">Edycja: Wygrywando 3</span>
+              </div>
+            </div>
+            <div class="winner-prize-box">
+              <span class="prize-label">Wygrał nagrodę:</span>
+              <span class="prize-title">Cadillac Escalade V-Series</span>
+            </div>
+            <blockquote class="winner-quote">
+              "Kupiłem Kartę Srebrną za 49 zł dla zniżki na bluzę i dodatkowych losów. Kiedy Michał zadzwonił do mnie na live, myślałem, że to żart moich kumpli. Escalade stoi w moim garażu, a gotówka pomogła opłacić podatek!"
+            </blockquote>
+            <a href="https://youtube.com/" target="_blank" class="winner-video-link">
+              <i class="fa-brands fa-youtube"></i> Obejrzyj Finał
+            </a>
+          </div>
+          
+          <!-- Winner 2 -->
+          <div class="glass-card winner-card reveal-on-scroll reveal-stagger-2">
+            <div class="winner-avatar-row">
+              <div class="winner-avatar" aria-hidden="true">
+                <i class="fa-solid fa-user-ninja"></i>
+              </div>
+              <div class="winner-meta">
+                <h4>Katarzyna z Krakowa</h4>
+                <span class="winner-date">Edycja: Wygrywando 2</span>
+              </div>
+            </div>
+            <div class="winner-prize-box">
+              <span class="prize-label">Wygrała nagrodę:</span>
+              <span class="prize-title">Mercedes-AMG A45S</span>
+            </div>
+            <blockquote class="winner-quote">
+              "Oglądam Wygrywando od początku, uwielbiam ich humor. Kupiłam bluzę i otrzymałam darmowe losy. Emocje podczas losowania były nie do opisania. Auto jest po prostu rakietą, a Michał i Kasia są przecudni na żywo!"
+            </blockquote>
+            <a href="https://youtube.com/" target="_blank" class="winner-video-link">
+              <i class="fa-brands fa-youtube"></i> Zobacz Odbiór
+            </a>
+          </div>
+          
+          <!-- Winner 3 -->
+          <div class="glass-card winner-card reveal-on-scroll reveal-stagger-3">
+            <div class="winner-avatar-row">
+              <div class="winner-avatar" aria-hidden="true">
+                <i class="fa-solid fa-user-secret"></i>
+              </div>
+              <div class="winner-meta">
+                <h4>Janusz z Poznania</h4>
+                <span class="winner-date">Edycja: Akcja Złoty Strzał</span>
+              </div>
+            </div>
+            <div class="winner-prize-box">
+              <span class="prize-label">Wygrał nagrodę:</span>
+              <span class="prize-title">100,000 PLN w Gotówce</span>
+            </div>
+            <blockquote class="winner-quote">
+              "Nie potrzebowałem nowego auta, dlatego brałem udział w edycji gotówkowej. Zdecydowałem się na Kartę Legendarną za 129 zł. Dostałem super dostęp do VOD i to wystarczyło. Przelew przyszedł ekspresowo, pełen profesjonalizm."
+            </blockquote>
+            <a href="https://youtube.com/" target="_blank" class="winner-video-link">
+              <i class="fa-brands fa-youtube"></i> Moment Losowania
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TRUST & LEGAL SECTION
+         ========================================================================== -->
+    <section class="trust-section section-padding" id="trust">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <h2>FAQ</h2>
+          <p>Najczęściej zadawane pytania</p>
+        </div>
+        
+        <div class="trust-accordion-container reveal-on-scroll">
+          <!-- Accordion Item 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header" id="acc-header-1" aria-expanded="false" aria-controls="acc-content-1">
+              <span>Czy loterie Wygrywando są w 100% legalne?</span>
+              <i class="fa-solid fa-plus accordion-icon" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content" id="acc-content-1" role="region" aria-labelledby="acc-header-1">
+              <p>Tak, absolutnie. Każda loteria promocyjna organizowana przez Wygrywando (Mediaformats Sp. z o.o.) odbywa się na podstawie oficjalnego zezwolenia wydanego przez Dyrektora Izby Administracji Skarbowej. Wszystkie procedury są nadzorowane i w 100% zgodne z polską ustawą o grach hazardowych.</p>
+            </div>
+          </div>
+          
+          <!-- Accordion Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" id="acc-header-2" aria-expanded="false" aria-controls="acc-content-2">
+              <span>Jak przebiega losowanie i nadzór nad nim?</span>
+              <i class="fa-solid fa-plus accordion-icon" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content" id="acc-content-2" role="region" aria-labelledby="acc-header-2">
+              <p>Losowanie głównej nagrody odbywa się na żywo za pośrednictwem transmisji na kanale YouTube Wygrywando. Do losowania używamy certyfikowanego urządzenia losującego. Cały proces jest bezpośrednio nadzorowany przez powołaną Wewnętrzną Komisję Nadzorczą oraz licencjonowanego notariusza publicznego, co gwarantuje pełną transparentność i uczciwość.</p>
+            </div>
+          </div>
+          
+          <!-- Accordion Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" id="acc-header-3" aria-expanded="false" aria-controls="acc-content-3">
+              <span>Co to jest Karta Farciarza i jak jej użyć?</span>
+              <i class="fa-solid fa-plus accordion-icon" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content" id="acc-content-3" role="region" aria-labelledby="acc-header-3">
+              <p>Karta Farciarza to elektroniczny bon rabatowy/prezentowy, który upoważnia Cię do zniżki w sklepie Wygrywando. W zależności od wybranego pakietu (Brązowa, Srebrna, Złota, Legend), otrzymujesz bon o określonej wartości nominalnej (np. 129 zł), darmowe losy w loterii oraz natychmiastowy dostęp do ekskluzywnej strefy wideo Klub VOD na okres 180 dni.</p>
+            </div>
+          </div>
+          
+          <!-- Accordion Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" id="acc-header-4" aria-expanded="false" aria-controls="acc-content-4">
+              <span>Oficjalne Dokumenty i Regulaminy</span>
+              <i class="fa-solid fa-plus accordion-icon" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-content" id="acc-content-4" role="region" aria-labelledby="acc-header-4">
+              <p>Chcemy, abyś znał wszystkie zasady. Poniżej znajdują się linki do pobrania oficjalnych regulaminów naszych akcji w formacie PDF:</p>
+              <div class="document-links">
+                <a href="#" class="doc-link"><i class="fa-solid fa-file-pdf"></i> Regulamin Loterii Wygrywando (PDF)</a>
+                <a href="#" class="doc-link"><i class="fa-solid fa-file-pdf"></i> Regulamin Sklepu i Kart (PDF)</a>
+                <a href="#" class="doc-link"><i class="fa-solid fa-file-shield"></i> Polityka Prywatności</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       VOD TEASER MODAL OVERLAY
+       ========================================================================== -->
+  <div class="modal-overlay" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Zamknij podgląd">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-loading-indicator" id="modalLoader"></div>
+      
+      <div class="video-player-mock">
+        <!-- Render current video cover -->
+        <img src="assets/hero_car.png" alt="Video cover art" id="modalVideoCover">
+        
+        <div class="video-player-ui">
+          <h3 id="modalTitle" style="font-size: 1.1rem; margin-bottom: 4px; font-family: var(--font-body); font-weight: 600;">Porsche 911 GT3 RS - Test na Torze Poznań</h3>
+          <div class="video-timeline-mock" id="videoTimeline" aria-label="Pasek postępu wideo">
+            <div class="video-timeline-playhead" id="videoPlayhead"></div>
+          </div>
+          
+          <div class="video-controls-row">
+            <div class="controls-left">
+              <button class="video-btn" id="videoPlayBtn" aria-label="Odtwórz / Pauza"><i class="fa-solid fa-pause"></i></button>
+              <button class="video-btn" aria-label="Następny film"><i class="fa-solid fa-forward-step"></i></button>
+              <span id="videoTime">02:14 / 18:45</span>
+            </div>
+            <div class="controls-right">
+              <button class="video-btn" aria-label="Wycisz"><i class="fa-solid fa-volume-high"></i></button>
+              <button class="video-btn" aria-label="Pełny ekran"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-clover logo-clover"></i>
+          <span>WYGRYWANDO</span>
+        </a>
+        <p>Jesteśmy społecznością nastawioną na dostarczanie genialnej rozrywki i spełnianie marzeń o niesamowitych maszynach.</p>
+        <div class="footer-socials">
+          <a href="https://youtube.com/" target="_blank" class="social-icon-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://instagram.com/" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com/" target="_blank" class="social-icon-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://facebook.com/" target="_blank" class="social-icon-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-group">
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="#hero">Strona Główna</a></li>
+          <li><a href="#giveaway">Szczegóły Loterii</a></li>
+          <li><a href="#tiers">Pakiety Kart</a></li>
+          <li><a href="#store">Sklep Internetowy</a></li>
+          <li><a href="#trust">FAQ</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Bądź na bieżąco</h4>
+        <p>Zapisz się do newslettera, aby otrzymywać informacje o nowych dropach merchu, zapowiedziach aut oraz o wynikach losowań.</p>
+        <form class="newsletter-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Zapisano pomyślnie!');">
+          <input type="email" class="newsletter-input" placeholder="Wpisz Twój adres e-mail" aria-label="Twój e-mail" required>
+          <button type="submit" class="btn-cyber">Zapisz się</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 WYGRYWANDO (Mediaformats Sp. z o.o. Warszawa). Wszelkie prawa zastrzeżone.</p>
+      <div class="footer-bottom-links">
+        <a href="#trust">Regulaminy</a>
+        <a href="#trust">Polityka Prywatności</a>
+        <a href="#trust">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
